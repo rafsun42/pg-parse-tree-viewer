@@ -1,0 +1,631 @@
+{QUERY 
+	   :commandType 1 
+	   :querySource 0 
+	   :canSetTag true 
+	   :utilityStmt <> 
+	   :resultRelation 0 
+	   :hasAggs false 
+	   :hasWindowFuncs false 
+	   :hasTargetSRFs false 
+	   :hasSubLinks false 
+	   :hasDistinctOn false 
+	   :hasRecursive false 
+	   :hasModifyingCTE false 
+	   :hasForUpdate false 
+	   :hasRowSecurity false 
+	   :cteList <> 
+	   :rtable (
+	      {RTE 
+	      :alias <> 
+	      :eref 
+	         {ALIAS 
+	         :aliasname cypher 
+	         :colnames ("a")
+	         }
+	      :rtekind 1 
+	      :subquery 
+	         {QUERY 
+	         :commandType 1 
+	         :querySource 0 
+	         :canSetTag false 
+	         :utilityStmt <> 
+	         :resultRelation 0 
+	         :hasAggs false 
+	         :hasWindowFuncs false 
+	         :hasTargetSRFs false 
+	         :hasSubLinks false 
+	         :hasDistinctOn false 
+	         :hasRecursive false 
+	         :hasModifyingCTE false 
+	         :hasForUpdate false 
+	         :hasRowSecurity false 
+	         :cteList <> 
+	         :rtable (
+	            {RTE 
+	            :alias 
+	               {ALIAS 
+	               :aliasname _ 
+	               :colnames <>
+	               }
+	            :eref 
+	               {ALIAS 
+	               :aliasname _ 
+	               :colnames ("p")
+	               }
+	            :rtekind 1 
+	            :subquery 
+	               {QUERY 
+	               :commandType 1 
+	               :querySource 0 
+	               :canSetTag true 
+	               :utilityStmt <> 
+	               :resultRelation 0 
+	               :hasAggs false 
+	               :hasWindowFuncs false 
+	               :hasTargetSRFs false 
+	               :hasSubLinks false 
+	               :hasDistinctOn false 
+	               :hasRecursive false 
+	               :hasModifyingCTE false 
+	               :hasForUpdate false 
+	               :hasRowSecurity false 
+	               :cteList <> 
+	               :rtable (
+	                  {RTE 
+	                  :alias 
+	                     {ALIAS 
+	                     :aliasname _age_default_alias_previous_cypher_clause 
+	                     :colnames <>
+	                     }
+	                  :eref 
+	                     {ALIAS 
+	                     :aliasname _age_default_alias_previous_cypher_clause 
+	                     :colnames ("p" "_age_default_alias_0")
+	                     }
+	                  :rtekind 1 
+	                  :subquery 
+	                     {QUERY 
+	                     :commandType 1 
+	                     :querySource 0 
+	                     :canSetTag true 
+	                     :utilityStmt <> 
+	                     :resultRelation 0 
+	                     :hasAggs false 
+	                     :hasWindowFuncs false 
+	                     :hasTargetSRFs false 
+	                     :hasSubLinks false 
+	                     :hasDistinctOn false 
+	                     :hasRecursive false 
+	                     :hasModifyingCTE false 
+	                     :hasForUpdate false 
+	                     :hasRowSecurity false 
+	                     :cteList <> 
+	                     :rtable (
+	                        {RTE 
+	                        :alias 
+	                           {ALIAS 
+	                           :aliasname p 
+	                           :colnames <>
+	                           }
+	                        :eref 
+	                           {ALIAS 
+	                           :aliasname p 
+	                           :colnames ("id" "properties")
+	                           }
+	                        :rtekind 0 
+	                        :relid 1525937 
+	                        :relkind r 
+	                        :tablesample <> 
+	                        :lateral false 
+	                        :inh true 
+	                        :inFromCl true 
+	                        :requiredPerms 2 
+	                        :checkAsUser 0 
+	                        :selectedCols (b 9 10)
+	                        :insertedCols (b)
+	                        :updatedCols (b)
+	                        :securityQuals <>
+	                        }
+	                        {RTE 
+	                        :alias 
+	                           {ALIAS 
+	                           :aliasname _age_default_alias_0 
+	                           :colnames <>
+	                           }
+	                        :eref 
+	                           {ALIAS 
+	                           :aliasname _age_default_alias_0 
+	                           :colnames ("id" "start_id" "end_id" "properties")
+	                           }
+	                        :rtekind 0 
+	                        :relid 1525924 
+	                        :relkind r 
+	                        :tablesample <> 
+	                        :lateral false 
+	                        :inh true 
+	                        :inFromCl true 
+	                        :requiredPerms 2 
+	                        :checkAsUser 0 
+	                        :selectedCols (b 9 10 11 12)
+	                        :insertedCols (b)
+	                        :updatedCols (b)
+	                        :securityQuals <>
+	                        }
+	                     )
+	                     :jointree 
+	                        {FROMEXPR 
+	                        :fromlist (
+	                           {RANGETBLREF 
+	                           :rtindex 1
+	                           }
+	                           {RANGETBLREF 
+	                           :rtindex 2
+	                           }
+	                        )
+	                        :quals 
+	                           {BOOLEXPR 
+	                           :boolop and 
+	                           :args (
+	                              {OPEXPR 
+	                              :opno 1525386 
+	                              :opfuncid 1525384 
+	                              :opresulttype 16 
+	                              :opretset false 
+	                              :opcollid 0 
+	                              :inputcollid 0 
+	                              :args (
+	                                 {VAR 
+	                                 :varno 2 
+	                                 :varattno 2 
+	                                 :vartype 1525378 
+	                                 :vartypmod -1 
+	                                 :varcollid 0 
+	                                 :varlevelsup 0 
+	                                 :varnoold 2 
+	                                 :varoattno 2 
+	                                 :location 0
+	                                 }
+	                                 {VAR 
+	                                 :varno 1 
+	                                 :varattno 1 
+	                                 :vartype 1525378 
+	                                 :vartypmod -1 
+	                                 :varcollid 0 
+	                                 :varlevelsup 0 
+	                                 :varnoold 1 
+	                                 :varoattno 1 
+	                                 :location 0
+	                                 }
+	                              )
+	                              :location -1
+	                              }
+	                              {OPEXPR 
+	                              :opno 96 
+	                              :opfuncid 65 
+	                              :opresulttype 16 
+	                              :opretset false 
+	                              :opcollid 0 
+	                              :inputcollid 0 
+	                              :args (
+	                                 {RELABELTYPE 
+	                                 :arg 
+	                                    {FUNCEXPR 
+	                                    :funcid 1525409 
+	                                    :funcresulttype 1525356 
+	                                    :funcretset false 
+	                                    :funcvariadic false 
+	                                    :funcformat 0 
+	                                    :funccollid 0 
+	                                    :inputcollid 0 
+	                                    :args (
+	                                       {VAR 
+	                                       :varno 2 
+	                                       :varattno 3 
+	                                       :vartype 1525378 
+	                                       :vartypmod -1 
+	                                       :varcollid 0 
+	                                       :varlevelsup 0 
+	                                       :varnoold 2 
+	                                       :varoattno 3 
+	                                       :location 0
+	                                       }
+	                                    )
+	                                    :location -1
+	                                    }
+	                                 :resulttype 23 
+	                                 :resulttypmod -1 
+	                                 :resultcollid 0 
+	                                 :relabelformat 2 
+	                                 :location -1
+	                                 }
+	                                 {CONST 
+	                                 :consttype 23 
+	                                 :consttypmod -1 
+	                                 :constcollid 0 
+	                                 :constlen 4 
+	                                 :constbyval true 
+	                                 :constisnull false 
+	                                 :location -1 
+	                                 :constvalue 4 [ 5 0 0 0 0 0 0 0 ]
+	                                 }
+	                              )
+	                              :location -1
+	                              }
+	                           )
+	                           :location -1
+	                           }
+	                        }
+	                     :targetList (
+	                        {TARGETENTRY 
+	                        :expr 
+	                           {FUNCEXPR 
+	                           :funcid 1525765 
+	                           :funcresulttype 1525410 
+	                           :funcretset false 
+	                           :funcvariadic false 
+	                           :funcformat 0 
+	                           :funccollid 0 
+	                           :inputcollid 0 
+	                           :args (
+	                              {VAR 
+	                              :varno 1 
+	                              :varattno 1 
+	                              :vartype 1525378 
+	                              :vartypmod -1 
+	                              :varcollid 0 
+	                              :varlevelsup 0 
+	                              :varnoold 1 
+	                              :varoattno 1 
+	                              :location -1
+	                              }
+	                              {FUNCEXPR 
+	                              :funcid 1525408 
+	                              :funcresulttype 2275 
+	                              :funcretset false 
+	                              :funcvariadic false 
+	                              :funcformat 0 
+	                              :funccollid 0 
+	                              :inputcollid 0 
+	                              :args (
+	                                 {CONST 
+	                                 :consttype 26 
+	                                 :consttypmod -1 
+	                                 :constcollid 0 
+	                                 :constlen 4 
+	                                 :constbyval true 
+	                                 :constisnull false 
+	                                 :location -1 
+	                                 :constvalue 4 [ -108 72 23 0 0 0 0 0 ]
+	                                 }
+	                                 {VAR 
+	                                 :varno 1 
+	                                 :varattno 1 
+	                                 :vartype 1525378 
+	                                 :vartypmod -1 
+	                                 :varcollid 0 
+	                                 :varlevelsup 0 
+	                                 :varnoold 1 
+	                                 :varoattno 1 
+	                                 :location -1
+	                                 }
+	                              )
+	                              :location -1
+	                              }
+	                              {VAR 
+	                              :varno 1 
+	                              :varattno 2 
+	                              :vartype 1525410 
+	                              :vartypmod -1 
+	                              :varcollid 0 
+	                              :varlevelsup 0 
+	                              :varnoold 1 
+	                              :varoattno 2 
+	                              :location -1
+	                              }
+	                           )
+	                           :location -1
+	                           }
+	                        :resno 1 
+	                        :resname p 
+	                        :ressortgroupref 0 
+	                        :resorigtbl 0 
+	                        :resorigcol 0 
+	                        :resjunk false
+	                        }
+	                        {TARGETENTRY 
+	                        :expr 
+	                           {FUNCEXPR 
+	                           :funcid 1525766 
+	                           :funcresulttype 1525410 
+	                           :funcretset false 
+	                           :funcvariadic false 
+	                           :funcformat 0 
+	                           :funccollid 0 
+	                           :inputcollid 0 
+	                           :args (
+	                              {VAR 
+	                              :varno 2 
+	                              :varattno 1 
+	                              :vartype 1525378 
+	                              :vartypmod -1 
+	                              :varcollid 0 
+	                              :varlevelsup 0 
+	                              :varnoold 2 
+	                              :varoattno 1 
+	                              :location -1
+	                              }
+	                              {VAR 
+	                              :varno 2 
+	                              :varattno 2 
+	                              :vartype 1525378 
+	                              :vartypmod -1 
+	                              :varcollid 0 
+	                              :varlevelsup 0 
+	                              :varnoold 2 
+	                              :varoattno 2 
+	                              :location -1
+	                              }
+	                              {VAR 
+	                              :varno 2 
+	                              :varattno 3 
+	                              :vartype 1525378 
+	                              :vartypmod -1 
+	                              :varcollid 0 
+	                              :varlevelsup 0 
+	                              :varnoold 2 
+	                              :varoattno 3 
+	                              :location -1
+	                              }
+	                              {FUNCEXPR 
+	                              :funcid 1525408 
+	                              :funcresulttype 2275 
+	                              :funcretset false 
+	                              :funcvariadic false 
+	                              :funcformat 0 
+	                              :funccollid 0 
+	                              :inputcollid 0 
+	                              :args (
+	                                 {CONST 
+	                                 :consttype 26 
+	                                 :consttypmod -1 
+	                                 :constcollid 0 
+	                                 :constlen 4 
+	                                 :constbyval true 
+	                                 :constisnull false 
+	                                 :location -1 
+	                                 :constvalue 4 [ -108 72 23 0 0 0 0 0 ]
+	                                 }
+	                                 {VAR 
+	                                 :varno 2 
+	                                 :varattno 1 
+	                                 :vartype 1525378 
+	                                 :vartypmod -1 
+	                                 :varcollid 0 
+	                                 :varlevelsup 0 
+	                                 :varnoold 2 
+	                                 :varoattno 1 
+	                                 :location -1
+	                                 }
+	                              )
+	                              :location -1
+	                              }
+	                              {VAR 
+	                              :varno 2 
+	                              :varattno 4 
+	                              :vartype 1525410 
+	                              :vartypmod -1 
+	                              :varcollid 0 
+	                              :varlevelsup 0 
+	                              :varnoold 2 
+	                              :varoattno 4 
+	                              :location -1
+	                              }
+	                           )
+	                           :location -1
+	                           }
+	                        :resno 2 
+	                        :resname _age_default_alias_0 
+	                        :ressortgroupref 0 
+	                        :resorigtbl 0 
+	                        :resorigcol 0 
+	                        :resjunk false
+	                        }
+	                     )
+	                     :override 0 
+	                     :onConflict <> 
+	                     :returningList <> 
+	                     :groupClause <> 
+	                     :groupingSets <> 
+	                     :havingQual <> 
+	                     :windowClause <> 
+	                     :distinctClause <> 
+	                     :sortClause <> 
+	                     :limitOffset <> 
+	                     :limitCount <> 
+	                     :rowMarks <> 
+	                     :setOperations <> 
+	                     :constraintDeps <> 
+	                     :stmt_location 0 
+	                     :stmt_len 0
+	                     }
+	                  :security_barrier false 
+	                  :lateral false 
+	                  :inh false 
+	                  :inFromCl true 
+	                  :requiredPerms 0 
+	                  :checkAsUser 0 
+	                  :selectedCols (b)
+	                  :insertedCols (b)
+	                  :updatedCols (b)
+	                  :securityQuals <>
+	                  }
+	               )
+	               :jointree 
+	                  {FROMEXPR 
+	                  :fromlist (
+	                     {RANGETBLREF 
+	                     :rtindex 1
+	                     }
+	                  )
+	                  :quals <>
+	                  }
+	               :targetList (
+	                  {TARGETENTRY 
+	                  :expr 
+	                     {VAR 
+	                     :varno 1 
+	                     :varattno 1 
+	                     :vartype 1525410 
+	                     :vartypmod -1 
+	                     :varcollid 0 
+	                     :varlevelsup 0 
+	                     :varnoold 1 
+	                     :varoattno 1 
+	                     :location 38
+	                     }
+	                  :resno 1 
+	                  :resname p 
+	                  :ressortgroupref 0 
+	                  :resorigtbl 0 
+	                  :resorigcol 0 
+	                  :resjunk false
+	                  }
+	               )
+	               :override 0 
+	               :onConflict <> 
+	               :returningList <> 
+	               :groupClause <> 
+	               :groupingSets <> 
+	               :havingQual <> 
+	               :windowClause <> 
+	               :distinctClause <> 
+	               :sortClause <> 
+	               :limitOffset <> 
+	               :limitCount <> 
+	               :rowMarks <> 
+	               :setOperations <> 
+	               :constraintDeps <> 
+	               :stmt_location 0 
+	               :stmt_len 0
+	               }
+	            :security_barrier false 
+	            :lateral false 
+	            :inh false 
+	            :inFromCl true 
+	            :requiredPerms 2 
+	            :checkAsUser 0 
+	            :selectedCols (b)
+	            :insertedCols (b)
+	            :updatedCols (b)
+	            :securityQuals <>
+	            }
+	         )
+	         :jointree 
+	            {FROMEXPR 
+	            :fromlist (
+	               {RANGETBLREF 
+	               :rtindex 1
+	               }
+	            )
+	            :quals <>
+	            }
+	         :targetList (
+	            {TARGETENTRY 
+	            :expr 
+	               {VAR 
+	               :varno 1 
+	               :varattno 1 
+	               :vartype 1525410 
+	               :vartypmod -1 
+	               :varcollid 0 
+	               :varlevelsup 0 
+	               :varnoold 1 
+	               :varoattno 1 
+	               :location -1
+	               }
+	            :resno 1 
+	            :resname p 
+	            :ressortgroupref 0 
+	            :resorigtbl 0 
+	            :resorigcol 0 
+	            :resjunk false
+	            }
+	         )
+	         :override 0 
+	         :onConflict <> 
+	         :returningList <> 
+	         :groupClause <> 
+	         :groupingSets <> 
+	         :havingQual <> 
+	         :windowClause <> 
+	         :distinctClause <> 
+	         :sortClause <> 
+	         :limitOffset <> 
+	         :limitCount <> 
+	         :rowMarks <> 
+	         :setOperations <> 
+	         :constraintDeps <> 
+	         :stmt_location 0 
+	         :stmt_len 0
+	         }
+	      :security_barrier false 
+	      :lateral false 
+	      :inh false 
+	      :inFromCl true 
+	      :requiredPerms 2 
+	      :checkAsUser 0 
+	      :selectedCols (b)
+	      :insertedCols (b)
+	      :updatedCols (b)
+	      :securityQuals <>
+	      }
+	   )
+	   :jointree 
+	      {FROMEXPR 
+	      :fromlist (
+	         {RANGETBLREF 
+	         :rtindex 1
+	         }
+	      )
+	      :quals <>
+	      }
+	   :targetList (
+	      {TARGETENTRY 
+	      :expr 
+	         {VAR 
+	         :varno 1 
+	         :varattno 1 
+	         :vartype 1525410 
+	         :vartypmod -1 
+	         :varcollid 0 
+	         :varlevelsup 0 
+	         :varnoold 1 
+	         :varoattno 1 
+	         :location 7
+	         }
+	      :resno 1 
+	      :resname a 
+	      :ressortgroupref 0 
+	      :resorigtbl 0 
+	      :resorigcol 0 
+	      :resjunk false
+	      }
+	   )
+	   :override 0 
+	   :onConflict <> 
+	   :returningList <> 
+	   :groupClause <> 
+	   :groupingSets <> 
+	   :havingQual <> 
+	   :windowClause <> 
+	   :distinctClause <> 
+	   :sortClause <> 
+	   :limitOffset <> 
+	   :limitCount <> 
+	   :rowMarks <> 
+	   :setOperations <> 
+	   :constraintDeps <> 
+	   :stmt_location 0 
+	   :stmt_len 87
+	   }
+	

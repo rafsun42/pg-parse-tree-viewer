@@ -1,0 +1,350 @@
+{
+  "type": "QUERY",
+  "rtable": [
+    {
+      "type": "RTE",
+      "eref": "cypher (a, )",
+      "rtekind": 1,
+      "subquery": {
+        "type": "QUERY",
+        "rtable": [
+          {
+            "type": "RTE",
+            "eref": "_ (p, )",
+            "rtekind": 1,
+            "subquery": {
+              "type": "QUERY",
+              "rtable": [
+                {
+                  "type": "RTE",
+                  "eref": "_age_default_alias_previous_cypher_clause (p, _age_default_alias_0, )",
+                  "rtekind": 1,
+                  "subquery": {
+                    "type": "QUERY",
+                    "rtable": [
+                      {
+                        "type": "RTE",
+                        "eref": "p (id, properties, )",
+                        "rtekind": 0,
+                        "relid": 1525937,
+                        "relkind": "r"
+                      },
+                      {
+                        "type": "RTE",
+                        "eref": "_age_default_alias_0 (id, start_id, end_id, properties, )",
+                        "rtekind": 0,
+                        "relid": 1525924,
+                        "relkind": "r"
+                      }
+                    ],
+                    "jointree": {
+                      "type": "FROMEXPR",
+                      "fromlist": [
+                        {
+                          "type": "RANGETBLREF",
+                          "rtindex": 1
+                        },
+                        {
+                          "type": "RANGETBLREF",
+                          "rtindex": 2
+                        }
+                      ],
+                      "quals": {
+                        "type": "BOOLEXPR",
+                        "boolop": "and",
+                        "args": [
+                          {
+                            "type": "OPEXPR",
+                            "opno": 1525386,
+                            "opfuncid": 1525384,
+                            "opresulttype": 16,
+                            "opretset": false,
+                            "opcollid": 0,
+                            "inputcollid": 0,
+                            "args": [
+                              {
+                                "type": "VAR",
+                                "varno": 2,
+                                "varattno": 2,
+                                "vartype": 1525378
+                              },
+                              {
+                                "type": "VAR",
+                                "varno": 1,
+                                "varattno": 1,
+                                "vartype": 1525378
+                              }
+                            ],
+                            "location": -1
+                          },
+                          {
+                            "type": "OPEXPR",
+                            "opno": 96,
+                            "opfuncid": 65,
+                            "opresulttype": 16,
+                            "opretset": false,
+                            "opcollid": 0,
+                            "inputcollid": 0,
+                            "args": [
+                              {
+                                "type": "RELABELTYPE",
+                                "arg": {
+                                  "type": "FUNCEXPR",
+                                  "funcid": 1525409,
+                                  "funcresulttype": 1525356,
+                                  "funcretset": false,
+                                  "funcvariadic": false,
+                                  "funcformat": 0,
+                                  "funccollid": 0,
+                                  "inputcollid": 0,
+                                  "args": [
+                                    {
+                                      "type": "VAR",
+                                      "varno": 2,
+                                      "varattno": 3,
+                                      "vartype": 1525378
+                                    }
+                                  ],
+                                  "location": -1
+                                },
+                                "resulttype": 23,
+                                "resulttypmod": -1,
+                                "resultcollid": 0,
+                                "relabelformat": 2,
+                                "location": -1
+                              },
+                              {
+                                "type": "CONST",
+                                "consttype": 23,
+                                "consttypmod": -1,
+                                "constcollid": 0,
+                                "constlen": 4,
+                                "constbyval": false,
+                                "constisnull": false,
+                                "location": -1,
+                                "constvalue": 4
+                              }
+                            ],
+                            "location": -1
+                          }
+                        ],
+                        "location": -1
+                      }
+                    },
+                    "targetList": [
+                      {
+                        "type": "TARGETENTRY",
+                        "expr": {
+                          "type": "FUNCEXPR",
+                          "funcid": 1525765,
+                          "funcresulttype": 1525410,
+                          "funcretset": false,
+                          "funcvariadic": false,
+                          "funcformat": 0,
+                          "funccollid": 0,
+                          "inputcollid": 0,
+                          "args": [
+                            {
+                              "type": "VAR",
+                              "varno": 1,
+                              "varattno": 1,
+                              "vartype": 1525378
+                            },
+                            {
+                              "type": "FUNCEXPR",
+                              "funcid": 1525408,
+                              "funcresulttype": 2275,
+                              "funcretset": false,
+                              "funcvariadic": false,
+                              "funcformat": 0,
+                              "funccollid": 0,
+                              "inputcollid": 0,
+                              "args": [
+                                {
+                                  "type": "CONST",
+                                  "consttype": 26,
+                                  "consttypmod": -1,
+                                  "constcollid": 0,
+                                  "constlen": 4,
+                                  "constbyval": false,
+                                  "constisnull": false,
+                                  "location": -1,
+                                  "constvalue": 4
+                                },
+                                {
+                                  "type": "VAR",
+                                  "varno": 1,
+                                  "varattno": 1,
+                                  "vartype": 1525378
+                                }
+                              ],
+                              "location": -1
+                            },
+                            {
+                              "type": "VAR",
+                              "varno": 1,
+                              "varattno": 2,
+                              "vartype": 1525410
+                            }
+                          ],
+                          "location": -1
+                        },
+                        "resno": 1,
+                        "resname": "p"
+                      },
+                      {
+                        "type": "TARGETENTRY",
+                        "expr": {
+                          "type": "FUNCEXPR",
+                          "funcid": 1525766,
+                          "funcresulttype": 1525410,
+                          "funcretset": false,
+                          "funcvariadic": false,
+                          "funcformat": 0,
+                          "funccollid": 0,
+                          "inputcollid": 0,
+                          "args": [
+                            {
+                              "type": "VAR",
+                              "varno": 2,
+                              "varattno": 1,
+                              "vartype": 1525378
+                            },
+                            {
+                              "type": "VAR",
+                              "varno": 2,
+                              "varattno": 2,
+                              "vartype": 1525378
+                            },
+                            {
+                              "type": "VAR",
+                              "varno": 2,
+                              "varattno": 3,
+                              "vartype": 1525378
+                            },
+                            {
+                              "type": "FUNCEXPR",
+                              "funcid": 1525408,
+                              "funcresulttype": 2275,
+                              "funcretset": false,
+                              "funcvariadic": false,
+                              "funcformat": 0,
+                              "funccollid": 0,
+                              "inputcollid": 0,
+                              "args": [
+                                {
+                                  "type": "CONST",
+                                  "consttype": 26,
+                                  "consttypmod": -1,
+                                  "constcollid": 0,
+                                  "constlen": 4,
+                                  "constbyval": false,
+                                  "constisnull": false,
+                                  "location": -1,
+                                  "constvalue": 4
+                                },
+                                {
+                                  "type": "VAR",
+                                  "varno": 2,
+                                  "varattno": 1,
+                                  "vartype": 1525378
+                                }
+                              ],
+                              "location": -1
+                            },
+                            {
+                              "type": "VAR",
+                              "varno": 2,
+                              "varattno": 4,
+                              "vartype": 1525410
+                            }
+                          ],
+                          "location": -1
+                        },
+                        "resno": 2,
+                        "resname": "_age_default_alias_0"
+                      }
+                    ],
+                    "sortClause": null
+                  }
+                }
+              ],
+              "jointree": {
+                "type": "FROMEXPR",
+                "fromlist": [
+                  {
+                    "type": "RANGETBLREF",
+                    "rtindex": 1
+                  }
+                ],
+                "quals": null
+              },
+              "targetList": [
+                {
+                  "type": "TARGETENTRY",
+                  "expr": {
+                    "type": "VAR",
+                    "varno": 1,
+                    "varattno": 1,
+                    "vartype": 1525410
+                  },
+                  "resno": 1,
+                  "resname": "p"
+                }
+              ],
+              "sortClause": null
+            }
+          }
+        ],
+        "jointree": {
+          "type": "FROMEXPR",
+          "fromlist": [
+            {
+              "type": "RANGETBLREF",
+              "rtindex": 1
+            }
+          ],
+          "quals": null
+        },
+        "targetList": [
+          {
+            "type": "TARGETENTRY",
+            "expr": {
+              "type": "VAR",
+              "varno": 1,
+              "varattno": 1,
+              "vartype": 1525410
+            },
+            "resno": 1,
+            "resname": "p"
+          }
+        ],
+        "sortClause": null
+      }
+    }
+  ],
+  "jointree": {
+    "type": "FROMEXPR",
+    "fromlist": [
+      {
+        "type": "RANGETBLREF",
+        "rtindex": 1
+      }
+    ],
+    "quals": null
+  },
+  "targetList": [
+    {
+      "type": "TARGETENTRY",
+      "expr": {
+        "type": "VAR",
+        "varno": 1,
+        "varattno": 1,
+        "vartype": 1525410
+      },
+      "resno": 1,
+      "resname": "a"
+    }
+  ],
+  "sortClause": null
+}
